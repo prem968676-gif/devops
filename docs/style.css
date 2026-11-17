@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #2563eb;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Events Section */
+.events-section {
+    padding: 3rem 0;
+}
+
+.events-section h2, .register-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1e293b;
+}
+
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.event-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-top: 4px solid #2563eb;
+}
+
+.event-card h3 {
+    margin: 0.5rem 0;
+    color: #1e293b;
+}
+
+.badge {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badge.cultural {
+    background: #fce7f3;
+    color: #be185d;
+}
+
+.badge.workshop {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+/* Registration Form */
+.register-section {
+    padding: 2rem 0 4rem;
+}
+
+.register-form {
+    background: #fff;
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.register-form label {
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.register-form input, .register-form select {
+    padding: 0.75rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.register-form button {
+    background-color: #2563eb;
+    color: #fff;
+    border: none;
+    padding: 0.85rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+}
